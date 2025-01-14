@@ -1,4 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Button } from '@basile-ui/button';
 import styles from './app.module.css';
 
 import NxWelcome from './nx-welcome';
@@ -6,7 +7,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="doc-app" />
+      <Button label="Click me" />
     </div>
   );
 }

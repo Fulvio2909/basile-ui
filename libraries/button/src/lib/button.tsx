@@ -1,10 +1,16 @@
 import styles from './button.module.css';
 
-export function Button() {
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  onClick?: () => void;
+}
+
+export function Button({ className, label, onClick }: ButtonProps) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Button!</h1>
-    </div>
+    <button className={`${styles.button} ${className}`} onClick={onClick}>
+      {label}
+    </button>
   );
 }
 
