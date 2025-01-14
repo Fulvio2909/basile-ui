@@ -1,13 +1,14 @@
 import styles from './button.module.css';
 
 type ButtonProps = {
-  label: string;
+  className?: string;
+  label?: string;
   onClick?: () => void;
 }
 
-export function Button({ label, onClick }: ButtonProps) {
+export function Button({ className, label, onClick }: ButtonProps) {
   return (
-    <button className="btn" onClick={onClick}>
+    <button className={`${styles.button} ${className}`} onClick={onClick}>
       {label}
     </button>
   );
