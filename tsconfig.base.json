@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@basile-ui/button": ["libraries/button/src/index.ts"]
+      "@basile-ui/button": ["libraries/button/src/index.ts"],
+      "@basile-ui/card": ["libraries/card/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
