@@ -9,10 +9,10 @@ export function App() {
   return (
     <>
     <Navbar brand='Basile UI' links={[{name: 'Home', href: '/'}, {name: 'About', href: '/about'}]}/>
-      <Grid items={[
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} size='l'/>,
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} size='s'/>,
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} size='s'/>
+      <Grid columns={4} items={[
+        <Card children={<> <p>content card</p> <Button label='button'/> </>} />,
+        <Card children={<> <p>content card</p> <Button label='button'/> </>} />,
+        <Card children={<> <p>content card</p> <Button label='button'/> </>} />
       ]} />
     </>
   );
