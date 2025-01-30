@@ -1,7 +1,12 @@
 .grid {
     display: grid;
-    gap: 16px;
-    padding: 16px;
-    background-color: white;
-    transition: background-color 0.3s, box-shadow 0.3s ease;
-}
+    grid-template-columns: repeat(var(--columns, 3), 1fr); /* Numero di colonne dinamico */
+    gap: 1rem; /* Spazio tra gli elementi */
+    padding: 1rem; /* Spazio interno */
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
