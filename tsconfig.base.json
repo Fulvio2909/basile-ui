@@ -18,7 +18,8 @@
       "@basile-ui/button": ["libraries/button/src/index.ts"],
       "@basile-ui/card": ["libraries/card/src/index.ts"],
       "@basile-ui/grid": ["libraries/grid/src/index.ts"],
-      "@basile-ui/navbar": ["libraries/navbar/src/index.ts"]
+      "@basile-ui/navbar": ["libraries/navbar/src/index.ts"],
+      "@basile-ui/sidebar": ["libraries/sidebar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
