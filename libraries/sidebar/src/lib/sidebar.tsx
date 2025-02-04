@@ -17,11 +17,9 @@ export function Sidebar({ links }: sidebarProps) {
       <div className={styles.navbarLinks}>
         {links && links.map((link, index) => (
           <>
-            <Link to={link.name}>
-              <a key={index} className={styles.navbarLink} onClick={handleClick}>
+              <Link key={index} to={link.name} className={styles.navbarLink} onClick={handleClick}>
                 {link.name}
-              </a>
-            </Link>
+              </Link>
             {index < links.length - 1 && (
               <span className={styles.divider}></span>
             )}
