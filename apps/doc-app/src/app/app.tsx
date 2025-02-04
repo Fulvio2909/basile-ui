@@ -1,20 +1,35 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Route, Routes,  } from 'react-router';
 import styles from './app.module.css';
+import { Docs } from '../pages/Docs';
+import { Components } from '../pages/Components';
+import { Navbar } from '@basile-ui/navbar';
 import { Button } from '@basile-ui/button';
 import { Card } from '@basile-ui/card';
-import { Grid } from '@basile-ui/grid';
-import { Navbar } from '@basile-ui/navbar';
+// importa altri componenti qui
 
 export function App() {
   return (
-    <>
-    <Navbar brand='Basile UI' links={[{name: 'Home', href: '/'}, {name: 'About', href: '/about'}]}/>
-      <Grid columns={4} items={[
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} />,
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} />,
-        <Card children={<> <p>content card</p> <Button label='button'/> </>} />
-      ]} />
-    </>
+    <div className={styles.container}>
+      <Navbar 
+      brand="Basile UI" 
+      links={[
+        { name: 'Docs', href: '/' },
+        { name: 'Components', href: '/components' },
+      ]}
+      />
+
+      <Routes>
+      <Route path="/" element={<Docs />} />
+      <Route path="components" element={<Components />}>
+        <Route path="button" />
+        <Route path="card" />
+        <Route path="grid" />
+        <Route path="sidebar" />
+        <Route path="navbar" />
+      </Route>
+      </Routes>
+    </div>
   );
 }
 

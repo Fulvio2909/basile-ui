@@ -1,3 +1,5 @@
 /* Your styles goes here. */
 
-  
+.container {
+    margin: 1rem 10rem;
+}
