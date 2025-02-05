@@ -5,7 +5,7 @@ import { Docs } from '../pages/Docs';
 import { Components } from '../pages/Components';
 import { Navbar } from '@basile-ui/navbar';
 import { ContentContainer } from '../components/ContentContainer';
-import { Button } from '@basile-ui/button';
+import { Footer } from '@basile-ui/footer';
 
 export function App() {
   return (
@@ -29,6 +29,10 @@ export function App() {
         </Route>
       </Routes>
 
+      <Footer links={[
+        { name: 'Docs', href: '/' },
+        { name: 'Components', href: '/components' },
+      ]} />
     </div>
   );
 }

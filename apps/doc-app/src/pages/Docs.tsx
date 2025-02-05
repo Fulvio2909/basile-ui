@@ -11,7 +11,13 @@ export function Docs({ }: DocsProps) {
     <>
       <Hero
         title="Benvenuto in Basile-UI"
-        subtitle="Una libreria di componenti moderna e minimalista per le tue applicazioni web"
+        subtitle={
+          <>
+            Una libreria di componenti moderna e minimalista per le tue applicazioni web
+            <br /><br />
+            <strong>npm i @basile-ui</strong>
+          </>
+        }
         cta={{ text: "Scopri di più", href: "/components" }}
       />
     </>

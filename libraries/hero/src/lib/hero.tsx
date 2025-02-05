@@ -1,8 +1,9 @@
 import styles from './hero.module.css';
+import React from 'react';
 
 interface HeroProps {
   title?: string;
-  subtitle?: string;
+  subtitle?: string | React.ReactNode; // Updated type
   cta?: { text: string; href: string };
 }
 
