@@ -6,6 +6,7 @@ import { Components } from '../pages/Components';
 import { Navbar } from '@basile-ui/navbar';
 import { ContentContainer } from '../components/ContentContainer';
 import { Footer } from '@basile-ui/footer';
+import { Button } from '@basile-ui/button';
 
 export function App() {
   return (
@@ -21,7 +22,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Docs />} />
         <Route path="components" element={<Components />}>
-          <Route path="button" element={<ContentContainer><p>Button Component</p></ContentContainer>} />
+          <Route path="button" element={<ContentContainer><Button /></ContentContainer>} />
           <Route path="card" element={<ContentContainer><p>Card Component</p></ContentContainer>} />
           <Route path="grid" element={<ContentContainer><p>Grid Component</p></ContentContainer>} />
           <Route path="sidebar" element={<ContentContainer><p>Sidebar Component</p></ContentContainer>} />

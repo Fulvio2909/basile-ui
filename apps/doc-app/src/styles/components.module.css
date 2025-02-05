@@ -1,0 +1,13 @@
+.componentsContainer {
+    margin-top:2rem;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+.selectComponentMessage {
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
