@@ -26,6 +26,8 @@ export function App() {
           <Route path="grid" element={<ContentContainer><p>Grid Component</p></ContentContainer>} />
           <Route path="sidebar" element={<ContentContainer><p>Sidebar Component</p></ContentContainer>} />
           <Route path="navbar" element={<ContentContainer><p>Navbar Component</p></ContentContainer>} />
+          <Route path="hero" element={<ContentContainer><p>hero Component</p></ContentContainer>} />
+          <Route path="footer" element={<ContentContainer><p>footer Component</p></ContentContainer>} />
         </Route>
       </Routes>
 

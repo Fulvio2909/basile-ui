@@ -17,7 +17,9 @@ export function Components({ }: ComponentsProps) {
             { name: 'Card' },
             { name: 'Grid' },
             { name: 'Sidebar' },
-            { name: 'Navbar' }
+            { name: 'Navbar' },
+            { name: 'hero' },
+            { name: 'footer' },
           ]}
         />
         <div className={styles.content}>
