@@ -4,7 +4,6 @@ import styles from './app.module.css';
 import { Docs } from '../pages/Docs';
 import { Components } from '../pages/Components';
 import { Navbar } from '@basile-ui/navbar';
-import { ContentContainer } from '../components/ContentContainer';
 import { Footer } from '@basile-ui/footer';
 import { Button } from '@basile-ui/button';
 
@@ -22,13 +21,13 @@ export function App() {
       <Routes>
         <Route path="/" element={<Docs />} />
         <Route path="components" element={<Components />}>
-          <Route path="button" element={<ContentContainer><Button /></ContentContainer>} />
-          <Route path="card" element={<ContentContainer><p>Card Component</p></ContentContainer>} />
-          <Route path="grid" element={<ContentContainer><p>Grid Component</p></ContentContainer>} />
-          <Route path="sidebar" element={<ContentContainer><p>Sidebar Component</p></ContentContainer>} />
-          <Route path="navbar" element={<ContentContainer><p>Navbar Component</p></ContentContainer>} />
-          <Route path="hero" element={<ContentContainer><p>hero Component</p></ContentContainer>} />
-          <Route path="footer" element={<ContentContainer><p>footer Component</p></ContentContainer>} />
+          <Route path="button" />
+          <Route path="card" />
+          <Route path="grid" />
+          <Route path="sidebar" />
+          <Route path="navbar" />
+          <Route path="hero" />
+          <Route path="footer" />
         </Route>
       </Routes>
 

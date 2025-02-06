@@ -2,11 +2,12 @@ import styles from './footer.module.css';
 
 type FooterProps = {
   links?: { name: string; href: string }[];
+  background?: string;
 }
 
-export function Footer({ links }: FooterProps) {
+export function Footer({ links, background }: FooterProps) {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} style={{ background }}>
       <div className={styles.footerContent}>
         {links?.map((link, index) => (
           <a key={index} href={link.href} className={styles.footerLink}>
